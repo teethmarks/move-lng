@@ -14,6 +14,10 @@ a{
 	text-decoration:none;
 }
 
+a:hover{
+	opacity:0.8;
+}
+
 h1,h2,h3,h4,h5,h6{
 	padding:0;
 	margin:0;
@@ -51,13 +55,24 @@ header nav ul{
 header nav ul li{
 	list-style-type:none;
 	display:inline-block;
-	margin-left:15px;
+	margin-left:20px;
+}
+
+header nav ul li a:hover{
+	color:#333;
+	text-decoration:none;
+}
+
+header nav ul li a.active{
+	color:#f08642;
+	border-bottom:1px solid #f08642;
+	padding-bottom:2px;
 }
 
 
 .hero{
 	width:100%;
-	background-image:url('../images/823514072-2048x2048.jpg');
+	background-image:url('../images/844216956-2048x2048.jpg');
 	background-size:cover;
 	background-position:center center;
 	height:500px;
@@ -104,10 +119,14 @@ header nav ul li{
 	margin-bottom:15px;
 }
 
+.ribbon-wrap .item h3{
+	margin-bottom:8px;
+}
+
 .bigblock{
 	text-align:center;
 	color:#fff;
-	padding:30px 0;
+	padding:40px 0;
 }
 
 .bigblock .row{
@@ -123,7 +142,46 @@ header nav ul li{
 	margin:0 auto 20px auto;
 }
 
+.bigblock .item .icon img{
+	height:60px;
+}
+
 .bigblock .item h5{
 	margin-bottom:15px;
 }
 
+.contactblock{
+	padding:30px 0;
+	text-align:center;
+}
+
+.contactblock form{
+	margin-top:30px;
+}
+
+.contactblock .item input, .contactblock .item textarea{
+	width:60%;
+	padding:15px;
+}
+
+.contactblock .item{
+	margin-bottom:15px;
+}
+
+.contactblock .submit{
+	background-color:#f08642;;
+	border:0;
+	color:#fff;
+}
+
+.contactblock label{
+	display:block;
+	margin-bottom:0px;
+	font-weight:500;
+}
+
+footer{
+	background-color:#eee;
+	text-align:center;
+	padding:15px 0;
+}
