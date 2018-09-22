@@ -23,6 +23,10 @@ h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
 
+.container{
+	min-width:960px;
+}
+
 
 header{
 	width:100%;
@@ -67,6 +71,20 @@ header nav ul li a.active{
 	color:#f08642;
 	border-bottom:1px solid #f08642;
 	padding-bottom:2px;
+}
+
+header nav .special{
+	background-color:#999;
+	color:#fff;
+	padding:5px 17px 7px 17px;
+	border-radius:15px;
+}
+
+header nav .special:hover, header nav .special.active{
+	background-color:#f08642;
+	color:#fff;
+	opacity:1;
+	padding:5px 17px 7px 17px;
 }
 
 
@@ -219,6 +237,26 @@ footer{
 	border:1px solid #fff;
 }
 
+.button.dark{
+	color:#333;
+	border:1px solid #333;
+}
+
+.button:hover{
+	text-decoration:none;
+	background-color:#fff;
+	color:#333;
+	opacity:1;
+}
+
+.button.dark:hover{
+	text-decoration:none;
+	background-color:#f08642;
+	border:1px solid #f08642;
+	color:#fff;
+	opacity:1;
+}
+
 .thumb{
 	margin-bottom:20px;
 }
@@ -241,14 +279,18 @@ footer{
 }
 
 .team{
-	padding:50px 0;
-	text-align:center;
+	padding:50px 5%;
 }
 
 .team .item{
 	padding:0 35px;
 }
 
+.team .item h5{
+	margin-bottom:8px;
+}
+
 .title{
 	margin:0 0 40px 0;
+	text-align:center;
 }
