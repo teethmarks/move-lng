@@ -72,11 +72,15 @@ header nav ul li a.active{
 
 .hero{
 	width:100%;
-	background-image:url('../images/844216956-2048x2048.jpg');
+	background-image:url('../images/823514072-2048x2048.jpg');
 	background-size:cover;
 	background-position:center center;
 	height:500px;
 	display:table;
+}
+
+.hero.shorter{
+	height:300px;
 }
 
 .hero .tagline{
@@ -92,6 +96,10 @@ header nav ul li a.active{
 	font-weight:700;
 }
 
+.hero.shorter .tagline h1{
+	font-size:40px;
+}
+
 .hero .tagline .subtitle{
 	font-weight:500;
 }
@@ -105,8 +113,13 @@ header nav ul li a.active{
 }
 
 .intro{
-	padding-top:40px;
+	padding-top:50px;
 	padding-bottom:10px;
+}
+
+.about{
+	padding-top:50px;
+	padding-bottom:50px;
 }
 
 .ribbon-wrap{
@@ -130,10 +143,10 @@ header nav ul li a.active{
 .bigblock{
 	text-align:center;
 	color:#fff;
-	padding:40px 0;
+	padding:50px 0;
 }
 
-.bigblock .row{
+.bigblock .margintop-35{
 	margin-top:35px;
 }
 
@@ -157,10 +170,6 @@ header nav ul li a.active{
 .contactblock{
 	padding:40px 0;
 	text-align:center;
-}
-
-.contactblock form{
-	margin-top:30px;
 }
 
 .contactblock .item input, .contactblock .item textarea{
@@ -188,4 +197,58 @@ footer{
 	background-color:#eee;
 	text-align:center;
 	padding:15px 0;
+}
+
+.services{
+	padding:50px 0 20px 0;
+}
+
+.services .row{
+	margin-bottom:30px;
+}
+
+.services .item h4{
+	margin-top:10px;
+	font-size:21px;
+	text-align:center;
+}
+
+.button{
+	padding:10px 20px;
+	color:#fff;
+	border:1px solid #fff;
+}
+
+.thumb{
+	margin-bottom:20px;
+}
+
+.thumb.circle img{
+	border-radius:50%;
+}
+
+.vision{
+	text-align:left;
+}
+
+.vision ul{
+	margin:0;
+	padding:0 0 0 15px;
+}
+
+.vision ul li{
+	margin-bottom:10px;
+}
+
+.team{
+	padding:50px 0;
+	text-align:center;
+}
+
+.team .item{
+	padding:0 35px;
+}
+
+.title{
+	margin:0 0 40px 0;
 }
