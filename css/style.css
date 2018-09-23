@@ -20,11 +20,7 @@ a:hover{
 
 h1,h2,h3,h4,h5,h6{
 	padding:0;
-	margin:0;
-}
-
-.container{
-	min-width:960px;
+	margin-top:15px;
 }
 
 
@@ -40,8 +36,11 @@ header{
 }
 
 header .logo{
-	float:left;
-	width:50%;
+	text-align:center;
+}
+
+header .logo img{
+	height:40px;
 }
 
 header nav{
@@ -54,12 +53,18 @@ header nav{
 header nav ul{
 	padding:0;
 	margin:0;
+	text-align:center;
 }
 
 header nav ul li{
 	list-style-type:none;
 	display:inline-block;
-	margin-left:20px;
+	font-size:15px;
+	margin:0 2%;
+}
+
+header nav ul li:last-of-type{
+	border-bottom:0;
 }
 
 header nav ul li a:hover{
@@ -69,28 +74,19 @@ header nav ul li a:hover{
 
 header nav ul li a.active{
 	color:#f08642;
-	border-bottom:1px solid #f08642;
 	padding-bottom:2px;
 }
 
 header nav .special{
-	background-color:#999;
-	color:#fff;
-	padding:5px 17px 7px 17px;
-	border-radius:15px;
 }
 
 header nav .special:hover, header nav .special.active{
-	background-color:#f08642;
-	color:#fff;
-	opacity:1;
-	padding:5px 17px 7px 17px;
 }
 
 
 .hero{
 	width:100%;
-	background-image:url('../images/823514072-2048x2048.jpg');
+	background-image:url('../images/hero-home.jpg');
 	background-size:cover;
 	background-position:center center;
 	height:500px;
@@ -136,8 +132,7 @@ header nav .special:hover, header nav .special.active{
 }
 
 .about{
-	padding-top:50px;
-	padding-bottom:50px;
+	padding-top:20px;
 }
 
 .ribbon-wrap{
@@ -191,7 +186,7 @@ header nav .special:hover, header nav .special.active{
 }
 
 .contactblock .item input, .contactblock .item textarea{
-	width:60%;
+	width:85%;
 	padding:15px;
 }
 
@@ -218,11 +213,16 @@ footer{
 }
 
 .services{
-	padding:50px 0 20px 0;
+	padding-top:50px;
+	padding-bottom:20px;
 }
 
 .services .row{
 	margin-bottom:30px;
+}
+
+.services .item{
+	margin-bottom:20px;
 }
 
 .services .item h4{
