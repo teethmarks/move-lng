@@ -36,15 +36,17 @@ a:hover{
 }
 
 .logo{
-	height:55px;
-	transition:0.5s;
-	transform-origin:10% 10%;
 	text-align:center;
 	margin-bottom:10px;
 }
 
 .logo img{
-	max-height:100%;
+	height:55px;
+	transition:0.5s;
+}
+
+header.shrink .logo img{
+	height:35px;
 }
 
 nav{
