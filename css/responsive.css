@@ -1,0 +1,87 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.hide-mobile{
+		display:block;
+	}
+	.logo{
+		text-align:left;
+		margin-bottom:0;
+	}
+	nav{
+		text-align:right;
+	}
+	nav ul li{
+		padding-left: 16px;
+    	margin-left: 13px;
+	}
+	.content{
+		padding-top:80px;
+	}
+	.hero .tab{
+		padding:45px 40px;
+		float:right;
+	}
+	.hero .bluebar{
+		padding-top:45px;
+		padding-bottom:45px;
+	}
+	.hero .bluebar .left{
+		border-right:1px solid #fff;
+		padding-right:40px;
+	}
+	.hero .bluebar .right{
+		padding-left:40px;
+		margin-top:0;
+	}
+	section{
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+	.platform .item{
+		margin-bottom:0;
+	}
+	.platform .gap{
+		margin-top:30px;
+	}
+	.advantage .col{
+		margin-bottom:0;
+	}
+	.advantage .sub-block .col:first-of-type{
+		margin-bottom:15px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.contact .info-wrap .item{
+		display:inline-block;
+		margin-bottom:0;
+	}
+	.contact .info-wrap .address{
+		width:31%;
+	}
+	.contact .info-wrap .email{
+		width:27%;
+	}
+	.contact .info-wrap .hotline{
+		width:20%;
+	}
+	.contact .info-wrap .fax{
+		width:20%;
+	}
+	.advantage .sub-block .col:first-of-type{
+		margin-bottom:0;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

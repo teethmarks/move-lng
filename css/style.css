@@ -1,3 +1,11 @@
+body{
+	font-family:'Raleway',Arial,sans-serif;
+}
+
+.hide-mobile{
+	display:none;
+}
+
 header{
 	background-color:#f3f3f3;
 	padding-top:12px;
@@ -5,6 +13,20 @@ header{
 	position:fixed;
 	width:100%;
 	z-index:9;
+	border-bottom:1px solid #fff;
+}
+
+header.shrink{
+	box-shadow:0px 3px 10px rgba(0,0,0,0.3);
+	border-bottom:0;
+}
+
+header.shrink .logo{
+	height:35px;
+}
+
+a{
+	color:#043a64;
 }
 
 a:hover{
@@ -15,6 +37,10 @@ a:hover{
 
 .logo{
 	height:55px;
+	transition:0.5s;
+	transform-origin:10% 10%;
+	text-align:center;
+	margin-bottom:10px;
 }
 
 .logo img{
@@ -22,8 +48,7 @@ a:hover{
 }
 
 nav{
-	text-align:right;
-	font-family:'Raleway',sans-serif;
+	text-align:center;
 }
 
 nav ul{
@@ -35,8 +60,8 @@ nav ul li{
 	display:inline-block;
 	list-style-type:none;
 	border-left:1px solid #043a64;
-	padding-left:16px;
-	margin-left:13px;
+	padding-left:10px;
+	margin-left:10px;
 	text-transform:uppercase;
 	font-size:14px;
 	line-height:100%;
@@ -44,6 +69,8 @@ nav ul li{
 
 nav ul li:first-of-type{
 	border-left:0;
+	margin-left:0;
+	padding-left:0;
 }
 
 nav ul li a{
@@ -58,8 +85,8 @@ nav ul li a.login{
 }
 
 .content{
-	height:1150px;
-	padding-top:80px;
+	/*height:1150px;*/
+	padding-top:140px;
 }
 
 .hero{
@@ -68,22 +95,24 @@ nav ul li a.login{
 	background-position:center center;
 	height:650px;
 	position:relative;
+	padding-top:0;
 }
 
 .hero .tab{
 	background-color:rgba(12,63,136,0.65);
 	color:#fff;
 	width:300px;
-	padding:45px 40px;
+	padding:20px;
 	text-align:center;
-	float:right;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .hero .tab h1{
 	border-top:3px solid #fff;
-	padding-top:10px;
+	padding-top:15px;
 	display:inline-block;
-	margin:0;
+	margin:0 0 5px 0;
 	text-align:left;
 	font-size:26px;
 	font-weight:600;
@@ -92,20 +121,233 @@ nav ul li a.login{
 
 .hero .tab h1 span{
 	float:right;
-	font-size:30px;
+	font-size:31px;
 }
 
 .hero .tab p{
-	font-size:22px;
+	font-size:20px;
 	margin:0;
 	text-transform:uppercase;
-	font-weight:400;
+	font-weight:300;
+	white-space: nowrap;
+	text-align:center;
 }
 
 .hero .bluebar{
 	position:absolute;
 	bottom:0;
-	background-color:rgba(12,63,136,0.65);
+	background-color:rgba(12,63,136,0.85);
 	color:#fff;
-	height:175px;
+	padding:20px 0;
+	border-top:1px solid #fff;
+}
+
+.hero .bluebar .left{
+	font-size:30px;
+	text-transform:uppercase;
+	line-height:120%;
+	font-weight:600;
+}
+
+.hero .bluebar .left span{
+	float:right;
+}
+
+.hero .bluebar .right{
+	font-size:15px;
+	margin-top:15px;
+}
+
+section{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+section .title{
+	font-size:35px;
+	text-transform:uppercase;
+	color:#043a64;
+	font-weight:600;
+	margin-bottom:40px;
+	text-align:center;
+}
+
+/* Our Platform Section */
+
+.platform{
+	text-align:center;
+}
+
+.platform .item{
+	margin-bottom:30px;
+}
+
+.platform .item:last-of-type{
+	margin-bottom:0;
+}
+
+.platform .item .icon{
+	margin-bottom:30px;
+}
+
+.platform .item h1{
+	font-size:20px;
+	font-weight:600;
+	color:#043a64;
+	margin-bottom:20px;
+}
+
+/* Our Advantage Section */
+
+.advantage{
+	background-color:#f3f3f3;
+}
+
+.advantage .col{
+	padding-left:10px;
+	padding-right:10px;
+	margin-bottom:20px;
+}
+
+.advantage .sub-block{
+	margin-top:20px;
+	margin-left:-10px;
+	margin-right:-10px;
+}
+
+.advantage .blue-block{
+	background-color:#043963;
+	color:#fff;
+	border-radius:10px;
+	padding:20px;
+}
+
+.advantage .blue-block h1{
+	font-size:16px;
+	font-weight:600;
+	text-transform:uppercase;
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-position:top right;
+	padding:7px 50px 7px 0;
+	margin-bottom:15px;
+}
+
+.advantage .blue-block h1.efficiency{
+	background-image:url('../images/icon-clock.png');
+}
+
+.advantage .blue-block h1.documentation{
+	background-image:url('../images/icon-contract.png');
+}
+
+.advantage .blue-block h1.innovation{
+	background-image:url('../images/icon-bulb.png');
+}
+
+.advantage .blue-block h1.privacy{
+	background-image:url('../images/icon-cloud.png');
+}
+
+.advantage .blue-block p{
+	font-size:14px;
+}
+
+.advantage .blue-block ul{
+	padding:0 0 0 20px;
+	font-size:14px;
+}
+
+.advantage .blue-block.full-height{
+	height:100%;
+}
+
+/* Contact */
+.contact{
+	background:url('../images/contact-bg.jpg');
+	position:relative;
+}
+
+.contact .container:before{
+	content:'';
+	position:absolute;
+    background-image:url('../images/shdow.png');
+    height:35px;
+    width:100%;
+    display: block;
+    top:0;
+    left:0;
+    opacity:0.3;
+}
+
+.contact .title{
+	color:#fff;
+}
+
+.contact .form-wrap{
+	border-bottom:1px solid #687c8d;
+	padding-bottom:20px;
+	margin-bottom:30px;
+}
+
+.contact input, .contact textarea{
+	width:100%;
+	margin-bottom:15px;
+	padding:10px 15px;
+	border:0;
+}
+
+.contact .submit{
+	background-color:#043a64;
+	color:#fff;
+	padding:15px;
+	font-weight:600;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+
+.contact .submit:hover{
+	background-color:#ccc;
+	color:#043a64;
+}
+
+.contact .info-wrap{
+	color:#fff;
+	font-size:14px;
+}
+
+.contact .info-wrap .item{
+	background-repeat:no-repeat;
+	padding-left:25px;
+	background-position:left 3px;
+	display:block;
+	vertical-align:top;
+	margin-bottom:10px;
+}
+
+.contact .info-wrap .item a{
+	color:#fff;
+}
+
+.contact .info-wrap .address{
+	background-image:url('../images/icon-address.png');
+}
+
+.contact .info-wrap .email{
+	background-image:url('../images/icon-email.png');
+}
+
+.contact .info-wrap .hotline{
+	background-image:url('../images/icon-hotline.png');
+}
+
+.contact .info-wrap .fax{
+	background-image:url('../images/icon-fax.png');
+}
+
+.copyright{
+	text-align:center;
+	background-color:#043a64;
+	color:#fff;
+	padding:15px 0;
 }
