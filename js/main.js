@@ -8,10 +8,21 @@ $(window).scroll(function() {
 });
 
 // Scroll to div
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top -50
-    }, 500);
-});
+if ($(window).width()<768){
+	$(document).on('click', 'a[href^="#"]', function (event) {
+	    event.preventDefault();
+
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top -120
+	    }, 500);
+	});
+} else {
+	$(document).on('click', 'a[href^="#"]', function (event) {
+	    event.preventDefault();
+
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top -50
+	    }, 500);
+	});
+}
